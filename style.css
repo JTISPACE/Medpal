@@ -370,7 +370,7 @@ p {
 .card-textbox {
   position: absolute;
   bottom: 1px;
-  padding: 20px 25px;
+  padding: 0px 25px;
 }
 
 .card-text-big {
@@ -737,6 +737,10 @@ p {
     padding: 8px 25px;
     font-size: 14px;
   }
+  
+  .card-textbox {
+  padding: 20px 25px;
+}
 
   .row-7 {
     padding-top: 40px;
