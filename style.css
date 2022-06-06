@@ -36,7 +36,7 @@ p {
 .header {
   width: 100%;
   background-color: var(--Dark-color);
-  height: 15vh;
+  height: 12vh;
   top: 0;
   position: sticky;
   z-index: 2;
@@ -49,7 +49,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 35px;
+  padding-top: 20px;
 }
 
 .nav-list {
@@ -76,8 +76,31 @@ p {
   color: #fff;
   font-size: 18px;
   border: none;
-  border-radius: 15px;
+  border-radius: 50px;
   text-decoration: none;
+}
+
+.register-btn:hover {
+  color: var(--Dark-color);
+}
+
+/* mobile menu icon */
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: var(--Primary-color);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+nav .menu {
+  display: none;
 }
 
 /* -------Main-Row-One--------- */
@@ -632,8 +655,47 @@ p {
     content: "";
   }
 
+  /* .nav-links {
+    display: block;
+  } */
+
+  .header {
+    height: 10vh;
+  }
+
+  .navbar {
+    padding-top: 15px;
+  }
+
   .nav-list {
-    display: none;
+    display: block;
+    margin-top: 25px;
+    margin-left: 10px;
+  }
+  .nav-links {
+    position: fixed;
+    background: var(--Dark-color);
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    right: -2500px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .menu {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .nav-list li {
+    padding: 10px 0px;
+  }
+
+  .register-btn {
+    margin-top: 50px;
   }
 
   .main,
@@ -666,7 +728,7 @@ p {
 
   .col-1-txt,
   .col-2-txt {
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 10px;
   }
 
@@ -737,10 +799,10 @@ p {
     padding: 8px 25px;
     font-size: 14px;
   }
-  
+
   .card-textbox {
-  padding: 20px 25px;
-}
+    padding: 20px 25px;
+  }
 
   .row-7 {
     padding-top: 40px;
@@ -782,6 +844,10 @@ p {
     display: block;
     flex-wrap: wrap;
     width: 100%;
+  }
+
+  .subscribe-text {
+    margin-bottom: 30px;
   }
 
   .subscribe-form input[type="text"] {
