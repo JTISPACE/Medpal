@@ -690,6 +690,11 @@ nav .menu {
     font-size: 25px;
     cursor: pointer;
   }
+  
+  nav .chev {
+    font-size: 16px;
+  }
+  
   .nav-list li {
     padding: 10px 0px;
   }
